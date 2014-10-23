@@ -1,0 +1,129 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Mission: Accomplished</title>
+<meta name="HandheldFriendly" content="True">
+<meta name="MobileOptimized" content="320">
+<meta name="viewport" content="width=device-width, initial-scale=1,user-scalable=0">
+<meta http-equiv="cleartype" content="on">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-status-bar-style" content="black">
+<meta name="apple-mobile-web-app-title" content="Mission Accomplished">
+
+<link rel="apple-touch-icon-precomposed" sizes="144x144" href="img/144.png">
+<link rel="apple-touch-icon-precomposed" sizes="114x114" href="img/114.png">
+<link rel="apple-touch-icon-precomposed" sizes="72x72" href="img/72.png">
+<link rel="apple-touch-icon-precomposed" href="57.png">
+<link rel="shortcut icon" href="img/144.png">
+
+
+<link rel="stylesheet" href="bootstrap/css/bootstrap.min.css">
+<link href='http://fonts.googleapis.com/css?family=Roboto+Slab' rel='stylesheet' type='text/css'>
+<link rel="stylesheet" href="css/mission.css?v=1">
+<link href="audio/click.aac">
+<link href="audio/loading.aac">
+<link href="audio/accomplished.aac">
+<link href="audio/transmission.aac">
+<link href="audio/click.ogg">
+<link href="audio/loading.ogg">
+<link href="audio/accomplished.ogg">
+<link href="audio/transmission.ogg">
+
+<script type="text/javascript" src="//use.typekit.net/sur0xyb.js"></script>
+<script type="text/javascript">try{Typekit.load();}catch(e){}</script>
+
+</head>
+
+
+<body class="tk-ff-prater-serif-web">
+
+<div id="app-wrap">
+<div id="loading">
+	<div id="loading-inner" class="clearfix">
+		<h1>Mission Accomplished</h1>
+		<div id="logo">
+			<img src="img/logo-600.png" width="200" height="200" alt="logo image"/>
+		</div>
+		<div id="dots" class="clearfix">
+			<div class="dot" id="dot1"></div>
+			<div class="dot" id="dot2"></div>
+			<div class="dot" id="dot3"></div>
+			<div class="dot" id="dot4"></div>
+			<div class="dot" id="dot5"></div>
+			<div class="dot" id="dot6"></div>
+		</div>
+	</div>
+</div>
+
+<div class="container">
+	<div class="row">
+		<div class="col-sm-12">
+			<div class="page-header">
+				<h1>Operation: <span class="operation"></span></h1>	
+			</div>
+		</div>
+	</div>
+	<div class="row">
+		<div class="col-sm-12">
+			<ul id="mission-list">
+				<li> </li>
+			</ul>
+			<section id="add-mission-wrapper">
+				<div class="input-group">
+					<input type="text" class="form-control" id="new-mission">
+					<span class="input-group-btn">
+					<button id="add-mission" class="btn btn-success" type="button">Add</button>
+					</span>
+				</div><!-- /input-group -->
+			</section>
+		</div>
+	</div>
+</div>
+<div class="modal fade" id="operation-complete">
+	<div class="modal-dialog">
+		<div class="modal-content">
+			<div class="modal-header">
+				<button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+				<h4 class="modal-title">Operation Complete</h4>
+			</div>
+			<div class="modal-body">
+				<p>Well done, <strong>Agent <span class="agent-name"></span></strong>. You have successfully accomplished all missions within <strong>Operation: <span class="operation"></span></strong>.</p>
+				<p>Standby for a new Operation, and a priority mission from HQ!</p>
+			</div>
+			<div class="modal-footer">
+				<button type="button" class="btn btn-default" data-dismiss="modal">Carry on...</button>
+			</div>
+		</div><!-- /.modal-content -->
+	</div><!-- /.modal-dialog -->
+</div><!-- /.modal -->
+<div class="modal fade" id="welcome-agent">
+	<div class="modal-dialog">
+		<div class="modal-content">
+			<div class="modal-header">
+				<button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+				<h4 class="modal-title">Briefing for asset codename: <strong><span class="agent-name"></span></strong></h4>
+			</div>
+			<div class="modal-body">
+				<p>Greetings agent. We're starting you out with a little operation we call <span class="operation"></span>. </p>
+				<p>Once you've accomplished all the missions, we'll be in touch with some new opportunities for you.</p>
+			</div>
+			<div class="modal-footer">
+				<button type="button" class="btn btn-default" data-dismiss="modal">Carry on...</button>
+			</div>
+		</div><!-- /.modal-content -->
+	</div><!-- /.modal-dialog -->
+</div><!-- /.modal -->
+<div id="agent-screen">
+	<div id="agent-screen-inner" class="clearfix">
+		<h1 id="agent-title"><span class="agent-label">Agent:</span><span class="agent-name">-agent-name-here-</span></h1>
+	</div>
+</div>
+</div>
+<button class="btn btn-danger" id="reset-local">Reset App</button>
+
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+<script src="bootstrap/js/bootstrap.min.js"></script>
+<script src="js/mission.js?v=2"></script>
+</body>
+</html>
